@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Bites | Fresh. Fast. Flavorful.</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Savory<span>Bites</span></a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#offers">Offers</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact" class="btn btn-outline">Reservations</a>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content reveal">
+            <h1 class="hero-headline">
+                <span class="word">Fresh.</span>
+                <span class="word">Fast.</span>
+                <span class="word accent">Flavorful.</span>
+            </h1>
+            <p class="hero-subtext">Experience culinary excellence with every bite. Join us for a memorable dining
+                experience.</p>
+            <a href="#menu" class="btn btn-primary btn-large">Order Now</a>
+        </div>
+    </section>
+
+    <!-- 2. About Section -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-text reveal fade-left">
+                <h2>Our <span class="accent-text">Story</span></h2>
+                <p>Founded in 2015, Savory Bites began with a simple mission: to bring authentic, mouth-watering flavors
+                    to our community using only the freshest, locally sourced ingredients.</p>
+                <p>Every dish is crafted with passion by our award-winning chefs, blending traditional recipes with
+                    modern culinary techniques. Whether you're craving a quick bite or a full-course meal, we promise an
+                    unforgettable taste journey.</p>
+                <a href="#contact" class="btn btn-secondary mt-3">Learn More</a>
+            </div>
+            <div class="about-image reveal fade-right">
+                <div class="image-frame">
+                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=800&auto=format&fit=crop"
+                        alt="Chef preparing food" id="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Explore Our <span class="accent-text">Menu</span></h2>
+                <p>Delicious options crafted to satisfy every craving.</p>
+            </div>
+            <div class="menu-grid">
+                <!-- Menu Item: Burger -->
+                <div class="menu-card reveal fade-up" style="transition-delay: 100ms;">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=600&auto=format&fit=crop"
+                            alt="Classic Burger" id="menu-burger">
+                        <div class="price-tag">$12.99</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Signature Burger</h3>
+                        <p>Juicy beef patty with caramelized onions, melted cheddar, and our secret sauce.</p>
+                        <button class="btn btn-block btn-primary">Add to Order</button>
+                    </div>
+                </div>
+
+                <!-- Menu Item: Pizza -->
+                <div class="menu-card reveal fade-up" style="transition-delay: 200ms;">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=600&auto=format&fit=crop"
+                            alt="Wood-fired Pizza" id="menu-pizza">
+                        <div class="price-tag">$16.50</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Artisan Pizza</h3>
+                        <p>Wood-fired crust topped with San Marzano tomatoes, fresh mozzarella, and basil.</p>
+                        <button class="btn btn-block btn-primary">Add to Order</button>
+                    </div>
+                </div>
+
+                <!-- Menu Item: Drinks -->
+                <div class="menu-card reveal fade-up" style="transition-delay: 300ms;">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=600&auto=format&fit=crop"
+                            alt="Refreshing Drink" id="menu-drink">
+                        <div class="price-tag">$5.00</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Tropical Refresher</h3>
+                        <p>A vibrant blend of passion fruit, lime, and mint over crushed ice.</p>
+                        <button class="btn btn-block btn-primary">Add to Order</button>
+                    </div>
+                </div>
+
+                <!-- Menu Item: Dessert -->
+                <div class="menu-card reveal fade-up" style="transition-delay: 400ms;">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=600&auto=format&fit=crop"
+                            alt="Decadent Dessert" id="menu-dessert">
+                        <div class="price-tag">$8.50</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lava Cake</h3>
+                        <p>Warm chocolate cake with a molten center, served with vanilla bean ice cream.</p>
+                        <button class="btn btn-block btn-primary">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Special Offers Section -->
+    <section id="offers" class="offers">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Special <span class="accent-text">Offers</span></h2>
+                <p>Don't miss out on our exclusive deals!</p>
+            </div>
+            <div class="offers-grid">
+                <div class="offer-card reveal fade-left">
+                    <div class="offer-content">
+                        <h3>Lunch Combo</h3>
+                        <p>Buy any burger and get a drink and fries for free! Available 11 AM - 3 PM.</p>
+                        <div class="discount-badge">-20%</div>
+                        <a href="#menu" class="btn btn-outline">Claim Offer</a>
+                    </div>
+                </div>
+                <div class="offer-card premium reveal fade-right">
+                    <div class="offer-content">
+                        <h3>Family Feast</h3>
+                        <p>2 Large Pizzas, 2 Sides, and 4 Drinks for the whole family.</p>
+                        <div class="discount-badge">Save $15</div>
+                        <a href="#menu" class="btn btn-primary">Claim Offer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>What Our <span class="accent-text">Guests</span> Say</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card reveal fade-up">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Absolutely the best burger I've ever had! The ambiance is amazing, and the
+                        service is top-notch."</p>
+                    <div class="reviewer">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop"
+                            alt="John Doe" id="avatar-1">
+                        <div>
+                            <h4>John Doe</h4>
+                            <span>Food Blogger</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal fade-up" style="transition-delay: 200ms;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"The artisan pizza transport me straight to Italy. Highly recommend the Lava
+                        Cake for dessert!"</p>
+                    <div class="reviewer">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=150&auto=format&fit=crop"
+                            alt="Sarah Smith" id="avatar-2">
+                        <div>
+                            <h4>Sarah Smith</h4>
+                            <span>Local Guide</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal fade-up" style="transition-delay: 400ms;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Fast delivery, incredibly fresh ingredients, and the packaging kept
+                        everything warm. Savory Bites is my new favorite!"</p>
+                    <div class="reviewer">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=150&auto=format&fit=crop"
+                            alt="Mike Johnson" id="avatar-3">
+                        <div>
+                            <h4>Mike Johnson</h4>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="gallery-grid">
+            <div class="gallery-item reveal"><img
+                    src="https://images.unsplash.com/photo-1414235077428-971168473bb7?q=80&w=600&auto=format&fit=crop"
+                    alt="Gallery 1" id="gal-1"></div>
+            <div class="gallery-item reveal" style="transition-delay: 100ms;"><img
+                    src="https://images.unsplash.com/photo-1476224255741-5eaae1ccce12?q=80&w=600&auto=format&fit=crop"
+                    alt="Gallery 2" id="gal-2"></div>
+            <div class="gallery-item reveal" style="transition-delay: 200ms;"><img
+                    src="https://images.unsplash.com/photo-1490818387583-1b5baeeddb72?q=80&w=600&auto=format&fit=crop"
+                    alt="Gallery 3" id="gal-3"></div>
+            <div class="gallery-item reveal" style="transition-delay: 300ms;"><img
+                    src="https://images.unsplash.com/photo-1504670073070-13f5727e57c8?q=80&w=600&auto=format&fit=crop"
+                    alt="Gallery 4" id="gal-4"></div>
+        </div>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container contact-wrapper">
+            <div class="contact-info reveal fade-left">
+                <h2>Book a <span class="accent-text">Table</span></h2>
+                <p>Reserve your spot to enjoy a magical dining experience.</p>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Culinary Avenue, Food City, FC 90210</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>hello@savorybites.com</p>
+                </div>
+            </div>
+            <div class="contact-form-container reveal fade-right">
+                <form id="reservation-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="guests" required>
+                            <option value="" disabled selected>Number of Guests</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4+">4+ People</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Special Requests / Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer Section -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">Savory<span>Bites</span></a>
+                <p>Bringing you the finest flavors with unparalleled service since 2015.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Savory Bites. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
